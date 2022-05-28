@@ -10,7 +10,7 @@ export default function Countdown({time}) {
     return (
         <Box p={10} h="100vh" display="flex" alignItems="center"  justifyContent="center" textAlign="center">
             <Heading id="time" fontSize="25vw" color="#FFF">
-                <Moment date={target} format="HH:mm:ss"/>
+                {formatted}
             </Heading>
 
         </Box>
