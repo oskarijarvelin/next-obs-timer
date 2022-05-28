@@ -16,29 +16,10 @@ export default function Index() {
     }
 
     return (
-        <Box p={10} textAlign="center">
-
-            <Heading fontSize="8vw" color="#666">
+        <Box p={10} h="100vh" display="flex" alignItems="center"  justifyContent="center" textAlign="center">
+            <Heading fontSize="25vw" color="#FFF">
                 <Moment interval={1000} format="HH:mm:ss" />
             </Heading>
-
-            <Heading fontSize="20vw" color="#FFF">
-                {stop &&
-                    <Text>00:00:00</Text>
-                }
-                {!stop &&
-                    <Moment date={time} interval={1000} format="HH:mm:ss" durationFromNow subtract={{ seconds: 1 }} />
-                }
-                
-            </Heading>
-
-            <Stack justifyContent='center' mt={10} direction='row' spacing={4}>
-                <Button colorScheme='blue' size='lg' onClick={start}>{stop ? "Start" : "Stop"}</Button>
-                {!stop &&
-                    <Button colorScheme='blue' size='lg' onClick={reset}>Reset</Button>
-                }
-            </Stack>
-
         </Box>
     )
 }

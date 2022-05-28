@@ -2,6 +2,7 @@ import App from 'next/app';
 import AppContext from '../context'
 import { ChakraProvider, extendTheme } from "@chakra-ui/react"
 import { createBreakpoints } from "@chakra-ui/theme-tools"
+import '../styles.css'
 
 const breakpoints = createBreakpoints({
     sm: "320px",
