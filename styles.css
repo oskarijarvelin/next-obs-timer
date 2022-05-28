@@ -1,3 +1,5 @@
 body {
-    background-color: #000 !important;
+    background: black;
+    font-family: 'Open Sans';
+    overflow: hidden;
 }
