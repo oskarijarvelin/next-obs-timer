@@ -30,7 +30,7 @@ export default function Countdown({ time }) {
 
     return (
         <div suppressHydrationWarning className={styles.container}>
-            {String(remainTime.hours).padStart(2, '0')}:{String(remainTime.minutes).padStart(2, '0')}:{String(remainTime.seconds).padStart(2, '0')}
+            <time>{String(remainTime.hours).padStart(2, '0')}:{String(remainTime.minutes).padStart(2, '0')}:{String(remainTime.seconds).padStart(2, '0')}</time>
         </div>
     );
 };
